@@ -1,0 +1,26 @@
+<%-- any content can be specified here e.g.: --%>
+
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page import="java.util.Enumeration" %>
+<%@page pageEncoding="UTF-8" %>
+
+
+   
+            <table>
+                <tr>
+                    <td style='text-align: center'>Gerisht</td>
+                    <td style='text-align: center'>Anzahl</td>
+                    <td style='text-align: center'>Preis</td>
+                </tr>
+                <c:forEach var="entry" items="${ctrl.bestellung.bestelltePizzen}" >
+
+                    <tr> <td>${entry.getKey().getName()}</td>  
+                        <td style='text-align:center'>${entry.getValue()}</td>   
+                        <td style='text-align: right'> <fmt:formatNumber type="currency" value="${entry.getKey().getPrice()*entry.getValue()} " /></td></tr>
+                    </c:forEach>  
+            </table>     
+
+            <br>
+            <h2>Gesammtsumme:<fmt:formatNumber type="currency" value="${ctrl.calculate()}" /></h2> 
+        
