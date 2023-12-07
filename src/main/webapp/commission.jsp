@@ -10,6 +10,10 @@
 
 
 
+
+
+
+
 <jsp:useBean id="customer" class="com.ibb.servlet.pizzaserverszhang.Customer" scope="session"/>
 <jsp:setProperty name="customer" property="*" />
 <!DOCTYPE html>
