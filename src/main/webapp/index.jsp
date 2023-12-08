@@ -7,9 +7,9 @@
 
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@page import="com.ibb.servlet.pizzaserverszhang.Menu"%>
-<%@page import="com.ibb.servlet.pizzaserverszhang.Customer"%>
-<%@page import="com.ibb.servlet.pizzaserverszhang.Product"%>
+<%@page import="com.ibb.model.Menu"%>
+<%@page import="com.ibb.model.Customer"%>
+<%@page import="com.ibb.model.Product"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 

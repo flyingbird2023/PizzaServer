@@ -7,7 +7,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="header.jsp"%>
-<jsp:useBean id="customer" class="com.ibb.servlet.pizzaserverszhang.Customer" scope="session"/>
+<jsp:useBean id="customer" class="com.ibb.model.Customer" scope="session"/>
 <jsp:setProperty name="p" property="*" />
 <!DOCTYPE html>
 <html>

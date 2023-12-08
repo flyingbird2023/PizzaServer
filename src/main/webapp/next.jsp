@@ -22,10 +22,12 @@
                 gbCtrl.save(request);
             
             Gaestebuch gb = new Gaestebuch();
+            out.print("<table>")
             for (Eintrag tmp : gb.getList()) {
-                out.print(tmp.getVorname() + " " + tmp.getNachname() + " " + tmp.getKommentar() + " <br />");
+                out.print("<tr><td>"+tmp.getVorname() + "</td><td>" + tmp.getNachname() 
+                + "</td><td> " + tmp.getKommentar() + "</td></tr> ");
             }
-
+            out.print("</table>")
         %> 
     </body>
 </html>

@@ -4,7 +4,7 @@
     Author     : zhanfei
 --%>
 
-<jsp:useBean id="p" class="com.ibb.servlet.pizzaserverszhang.Customer" scope="session"/>
+<jsp:useBean id="p" class="com.ibb.model.Customer" scope="session"/>
 <jsp:useBean id="ctrl" class="Com.ibb.ctrl.PizzaServiceController" scope="session"/>
  <link rel="stylesheet" type="text/css" href="css/styles.css">   
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>

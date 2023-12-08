@@ -1,4 +1,4 @@
-package com.ibb.servlet.pizzaserverszhang;
+package com.ibb.model;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
