@@ -4,9 +4,9 @@
  */
 package Com.ibb.ctrl;
 
-import com.ibb.servlet.pizzaserverszhang.Menu;
-import com.ibb.servlet.pizzaserverszhang.Order;
-import com.ibb.servlet.pizzaserverszhang.Product;
+import com.ibb.model.Menu;
+import com.ibb.model.Order;
+import com.ibb.model.Product;
 import jakarta.servlet.http.HttpServletRequest;
 import java.net.http.HttpRequest;
 import java.util.Enumeration;

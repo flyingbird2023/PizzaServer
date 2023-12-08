@@ -35,8 +35,9 @@ public class GConnection {
            // Class.forName("com.mysql.jdbc.Driver").newInstance();
             //Get a connectionds.getConnection();
             //Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/guestbook", "zhanfei", "zhanfei");
-           //conn.setAutoCommit(false);
+           
             Connection conn = ds.getConnection();
+            conn.setAutoCommit(false);
             return conn;
         } catch (SQLException ex) {
             System.out.println(ex.getStackTrace());
