@@ -51,7 +51,10 @@
         <% 
             String sessionId = session.getId();
             out.println("Session ID : " + sessionId);
+            
         %>
-
+        <form action="order.jsp">
+            <input type="submit" value="Kostenpflichtig bestellen" />
+        </form>
     </body>
 </html>

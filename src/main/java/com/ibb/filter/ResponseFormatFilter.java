@@ -109,7 +109,7 @@ public class ResponseFormatFilter extends GConnection implements Filter {
             StringTokenizer st = new StringTokenizer(content, " \t\n\r,;");
             while (st.hasMoreTokens()) {
                 String word = st.nextToken();
-                System.out.println("Token:::::::::" + word);
+              //  System.out.println("Token:::::::::" + word);
                 for (String tmp : filterwords) {
                     if (word.equalsIgnoreCase(tmp)) {
                         word = "****************";

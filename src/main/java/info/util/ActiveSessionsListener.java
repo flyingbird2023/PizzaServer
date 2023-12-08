@@ -7,6 +7,8 @@ import jakarta.servlet.annotation.WebListener;
 import jakarta.servlet.http.HttpSession;
 import jakarta.servlet.http.HttpSessionEvent;
 import jakarta.servlet.http.HttpSessionListener;
+import java.util.Enumeration;
+import java.util.logging.Logger;
 
 /**
  * Speichert aktive (gültige) Sessions
@@ -18,6 +20,7 @@ public class ActiveSessionsListener implements HttpSessionListener {
     * Enthält die aktiven Sessions <Session ID, Session>
     */
    private static Map<String, HttpSession> activeSessions =new HashMap<String, HttpSession>();
+    private static final Logger LOG = Logger.getLogger(ActiveSessionsListener.class.getName());
 
    /**
     * Wird gerufen, wenn eine Session erzeugt wurde
@@ -52,5 +55,13 @@ public class ActiveSessionsListener implements HttpSessionListener {
     */
    public  static Map<String, HttpSession> getActiveSessions() {
       return activeSessions;
+   }
+   
+   public static void collectAttribut(HttpSession sess){
+       Enumeration e=sess.getAttributeNames();
+       while (e.hasMoreElements()){
+           LOG.info((String)e.nextElement());
+           sess.getAttribute((String)e.nextElement());
+       }
    }
 }
